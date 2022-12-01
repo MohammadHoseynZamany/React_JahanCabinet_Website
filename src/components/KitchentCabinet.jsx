@@ -1,19 +1,24 @@
 import React from "react"
 import SeeDetails from "./SeeDetails"
-import image from `../images/cvb.jpg`
 
 export default function KitchenCabinet(props){
-    const [toReturn, setToReturn] = React.useState()
+    const [seeDetails, setSeeDetails] = React.useState(false)
     function handleClick(){
-        return(
-            <SeeDetails url={image} title={props.title} details={props.details} />
-        )
+        setSeeDetails(prevState => !prevState)
     }
     
-    return(
-        <div className="KitchenCabinet-container" onClick={handleClick}>
-            <img src={image} alt={props.title} />
-            <p>{props.title}</p>
-        </div>
-    )
+    if (!seeDetails){
+        return(
+            <div className="KitchenCabinet-container" onClick={handleClick}>
+                <img src={props.url} alt={props.title} />
+                <p>{props.title}</p>
+            </div>
+        )
+    } else {
+        return(
+            <SeeDetails url={props.url} title={props.title} details={props.details} />
+        )
+    }
+
+
 }
