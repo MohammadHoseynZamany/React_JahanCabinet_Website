@@ -1,5 +1,5 @@
 import React from "react"
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes, Link } from "react-router-dom"
 import KitchenCabinet from "../components/KitchentCabinet"
 import Closet from "../components/Closet"
 import ShowCase from "../components/ShowCase"
@@ -12,13 +12,26 @@ export default function Samples(){
     const MapComp = Data.map(item => {
         switch (item.type){
             case "KitchenCabinet":
-                return <KitchenCabinet key={item.id} url={item.url} details={item.details} title={item.title} />
+                return <KitchenCabinet key={item.id} url={item.url} details={item.details} title={item.title} />;
+            case "Closet":
+                return <Closet key={item.id} url={item.url} details={item.details} title={item.title} />;
+            case "ShowCase":
+                return <ShowCase key={item.id} url={item.url} details={item.details} title={item.title} />;
+            case "TvDesk":
+                return <TvDesk key={item.id} url={item.url} details={item.details} title={item.title} />;
+                                    
         }
     })
 
     return(
         <div className="samples-container">
-            {MapComp}
+            <h1>Samples</h1>
+            <Routes>
+                <Route path="/KitchenCabinet" element={MapComp} />
+                <Route path="/TvDesk" element={MapComp} />
+                <Route path="/ShowCase" element={MapComp} />
+                <Route path="/Closet" element={MapComp} />
+            </Routes>
         </div>
     )
 
