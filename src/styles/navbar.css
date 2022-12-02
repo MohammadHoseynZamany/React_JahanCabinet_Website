@@ -1,0 +1,39 @@
+.navContainer {
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    flex: 1fr 11fr;
+    transform: translate(-1%, -8%);
+    padding-right: 2%;
+    padding-left: 2%;
+    background-size: 100% 100%;
+}
+
+.linksContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 8px;
+    padding: 7px;
+    border-radius: 10px;
+    background-color: rgba(121, 212, 224, 0.315);
+}
+
+.navLink {
+    background-size: 120% 120%;
+    text-decoration: none;
+    margin: 5px;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: steelblue;
+}
+
+.navLink:hover {
+    background-color: rgb(117, 117, 250);
+}
+
+.navLink:active {
+    background-color: rgb(82, 82, 247);
+}

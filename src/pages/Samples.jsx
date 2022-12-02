@@ -35,16 +35,16 @@ export default function Samples(){
         <div className="samples-container">
             <ul>
                 <li>
-                    <Link to="/samples/KitchenCabinet">Kitchen Cabinet</Link>
+                    <Link to="/samples/KitchenCabinet">کابینت آشپزخانه</Link>
                 </li>
                 <li>
-                    <Link to="/samples/Closet">Closet</Link>
+                    <Link to="/samples/Closet">کمد لباسی</Link>
                 </li>
                 <li>
-                    <Link to="/samples/ShowCase">ShowCase</Link>
+                    <Link to="/samples/ShowCase">ویترین</Link>
                 </li>
                 <li>
-                    <Link to="/samples/TvDesk">TvDesk</Link>
+                    <Link to="/samples/TvDesk">میز تلویزیون</Link>
                 </li>
             </ul>
             <Routes>
