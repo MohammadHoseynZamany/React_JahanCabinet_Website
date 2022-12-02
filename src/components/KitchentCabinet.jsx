@@ -9,7 +9,7 @@ export default function KitchenCabinet(props){
     
     if (!seeDetails){
         return(
-            <div className="KitchenCabinet-container" onClick={handleClick}>
+            <div className="kitchenCabinet-container" onClick={handleClick}>
                 <img src={props.url} alt={props.title} />
                 <p>{props.title}</p>
             </div>
