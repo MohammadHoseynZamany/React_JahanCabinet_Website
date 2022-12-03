@@ -5,10 +5,17 @@ import Closet from "../components/Closet"
 import ShowCase from "../components/ShowCase"
 import TvDesk from "../components/TvDesk"
 import InputData from "../components/Input"
+import "../styles/samples.css"
 
 
 export default function Samples(){
     const [Data, setData] = React.useState(InputData)
+
+    const [className, setClassName] = React.useState("samplesLink-container")
+
+    function handleClick(){
+        // setClassName("samplesPage-container")
+    }
 
     let MapCloset = Data.map(item => {
         if (item.type == "Closet"){
@@ -32,22 +39,16 @@ export default function Samples(){
     })
 
     return(
-        <div className="samples-container">
-            <ul>
-                <li>
-                    <Link to="/samples/KitchenCabinet">کابینت آشپزخانه</Link>
-                </li>
-                <li>
-                    <Link to="/samples/Closet">کمد لباسی</Link>
-                </li>
-                <li>
-                    <Link to="/samples/ShowCase">ویترین</Link>
-                </li>
-                <li>
-                    <Link to="/samples/TvDesk">میز تلویزیون</Link>
-                </li>
-            </ul>
+        <div className={className}>
+            <div className="link-container">
+                <Link to="/samples/KitchenCabinet" className="samLink" onClick={handleClick}>کابینت آشپزخانه</Link>
+                <Link to="/samples/Closet" className="samLink" onClick={handleClick}>کمد لباسی</Link>
+                <Link to="/samples/ShowCase" className="samLink" onClick={handleClick}>ویترین</Link>
+                <Link to="/samples/TvDesk" className="samLink" onClick={handleClick}>میز تلویزیون</Link>
+                <br />  
+            </div>
             <Routes>
+                <Route index element={<Samples />} />
                 <Route path="/KitchenCabinet" element={MapKitchenCabinet} />
                 <Route path="/TvDesk" element={MapTvDesk} />
                 <Route path="/ShowCase" element={MapShowCase} />

@@ -1,5 +1,6 @@
 import React from "react"
 import SeeDetails from "./SeeDetails"
+import "../styles/sample.css"
 
 export default function ShowCase(props){
     const [seeDetails, setSeeDetails] = React.useState(false)
@@ -9,7 +10,7 @@ export default function ShowCase(props){
     
     if (!seeDetails){
         return(
-            <div className="showCase-container" onClick={handleClick}>
+            <div className="sample-container" onClick={handleClick}>
                 <img src={props.url} alt={props.title} />
                 <p>{props.title}</p>
             </div>

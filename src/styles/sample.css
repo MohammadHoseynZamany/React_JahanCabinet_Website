@@ -1,0 +1,29 @@
+.sample-container {
+    display: inline-block;
+    font-size: 3vw;
+    padding: 5px;
+    margin: 2vw;
+    border: 2px solid gray;
+    text-align: center;
+}
+
+.sample-container > img {
+    width: 40vw;
+    max-width: 400px;
+    height: 40vh;
+    margin: 0;
+    padding: 0;
+}
+
+.seeDetails-container {
+    font-size: 3vw;
+    width: 100vw;
+    text-align: center;
+}
+
+.seeDetails-container > img {
+    width: 100vw;
+    transform: translate(0.9vw);
+    box-shadow: 3vw 3vw 5px gray;
+
+}
