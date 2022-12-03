@@ -1,0 +1,17 @@
+.homeContainer {
+    text-align: center;
+    background-image: url("https://i.pinimg.com/564x/6e/0b/5b/6e0b5beaca126e6e4ef56564a333a7a7.jpg");
+    font-family: inherit;
+    width: 100vw;
+    height: 90vh;
+    position:absolute;
+    margin-left: 0;
+    transform:translate(-1%, -1%);
+    text-align: center;
+    font-size: 2.4vw;
+    text-shadow: rgba(15, 0, 0, 0.705) 5px 5px 5px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-shadow: rgb(12, 1, 1) 5px 5px 5px;
+    transform: translate(1vw);
+}

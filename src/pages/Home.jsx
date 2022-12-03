@@ -1,11 +1,11 @@
 import React from "react"
-// import '../styles/home.css'
+import '../styles/home.css'
 
 export default function Home(){
     let i = 0;
     const txtFirst = "سلام";
     const txtSecond = "          به وبسایت جهان کابینت خوش آمدید"
-    const txtPr = "                                             گروه صنعتی جهان کابینت سازنده انواع کابینت آشپزخانه ، کمد لباسی ، ویترین و میز تلویزیون است"
+    const txtPr = "                                             گروه صنعتی جهان کابینت سازنده انواع کابینت آشپزخانه ، کمد لباسی ، ویترین و میز تلویزیون می باشد."
     const speed = 200;
 
     React.useEffect(()=>{
