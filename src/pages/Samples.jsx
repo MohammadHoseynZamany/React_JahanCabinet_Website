@@ -11,11 +11,22 @@ import "../styles/samples.css"
 export default function Samples(){
     const [Data, setData] = React.useState(InputData)
 
-    const [className, setClassName] = React.useState("samplesLink-container")
+    const [className, setClassName] = React.useState("samplesPage-container")
+
+    function toSetClassName(){
+        setClassName("samplesLink-container")
+    }
 
     function handleClick(){
-        // setClassName("samplesPage-container")
+        toSetClassName()
     }
+
+    React.useEffect(()=>{
+        if (window.location.pathname != "/Samples/*"){
+            toSetClassName()
+        }
+    }, [])
+
 
     let MapCloset = Data.map(item => {
         if (item.type == "Closet"){
@@ -39,13 +50,12 @@ export default function Samples(){
     })
 
     return(
-        <div className={className}>
-            <div className="link-container">
+        <div className="samplesContainer">
+            <div className={className}>
                 <Link to="/samples/KitchenCabinet" className="samLink" onClick={handleClick}>کابینت آشپزخانه</Link>
                 <Link to="/samples/Closet" className="samLink" onClick={handleClick}>کمد لباسی</Link>
                 <Link to="/samples/ShowCase" className="samLink" onClick={handleClick}>ویترین</Link>
                 <Link to="/samples/TvDesk" className="samLink" onClick={handleClick}>میز تلویزیون</Link>
-                <br />  
             </div>
             <Routes>
                 <Route index element={<Samples />} />

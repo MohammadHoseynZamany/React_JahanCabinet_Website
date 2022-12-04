@@ -1,64 +1,30 @@
-/* .samplesLink-container {
-    display: flex;
-    align-items:center;
-    justify-content:space-between;
-    flex: 1fr 11fr;
-    transform: translate(-1%, -8%);
-    padding-right: 2%;
-    padding-left: 2%;
-    background-size: 100% 100%;
-}
-
-.samplesLink-container > .link-container {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 8px;
-    padding: 7px;
-    border-radius: 10px;
-    background-color: rgba(91, 58, 15, 0.404);
-}
-
-.samLink {
-    background-size: 120% 120%;
-    text-decoration: none;
-    margin: 5px;
-    color: rgb(234, 136, 9);
-    font-family: Arial, Helvetica, sans-serif;
-    border: none;
-    padding: 8px;
-    border-radius: 10px;
-    background-color: rgba(82, 49, 7, 0.406);
-}
-
-.samLink:hover {
-    background-color: rgba(91, 58, 15, 0.635);
-}
-
-.samLink:active {
-    background-color: rgba(91, 58, 15, 0.89);
-}
-
 .samplesPage-container {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 8px;
-    padding: 7px;
-    border-radius: 10px;
-    background-color: rgba(249, 225, 192, 0.404);
+    background-image: url("https://wooding.ir/content/upload/Post/5bd3e983b14148bf8c29b610cdba6350.jpg");
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+    position:absolute;
+    font-size: 2.4vw;
+    text-shadow: rgba(15, 0, 0, 0.705) 5px 5px 5px;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    text-shadow: rgb(12, 1, 1) 5px 5px 5px;
 }
 
-.samplesPage-container > .link-container {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 8px;
-    padding: 7px;
-    border-radius: 10px;
-    background-color: rgba(91, 58, 15, 0.404);
-} */
-
-.samLink {
-    font-size: 2.5vw;
-    display: block;
+.samplesPage-container > .samLink {
+    color: white;
     text-decoration: none;
-    color: red;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: rgba(245, 232, 232, 0.317);
+    text-align: center;
+    padding: 2vw;
+    font-size: 4.5vw;
 }
+
+.samplesPage-container > .samLink:hover {
+    box-shadow: 5px 5px 5px rgba(248, 245, 245, 0.594)
+}
+
