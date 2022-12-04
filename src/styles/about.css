@@ -11,6 +11,12 @@
     text-shadow: rgba(15, 0, 0, 0.705) 5px 5px 5px;
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
-    text-shadow: rgb(12, 1, 1) 5px 5px 5px;
     transform: translate(1vw);
+    display:grid;
+}
+.about-container > p {
+    max-width: 80vw;
+    margin: auto;
+    font-size: 5vh;
+    color: rgb(105, 52, 15);
 }
