@@ -5,9 +5,11 @@
     margin: 2vw;
     border: 2px solid gray;
     text-align: center;
+    border-radius: 10px;
 }
 
 .sample-container > img {
+    border-radius: 10px;
     width: 40vw;
     max-width: 400px;
     height: 40vh;
@@ -19,11 +21,12 @@
     font-size: 3vw;
     width: 100vw;
     text-align: center;
+    padding: 4vw;
 }
 
 .seeDetails-container > img {
     width: 100vw;
     transform: translate(0.9vw);
     box-shadow: 3vw 3vw 5px gray;
-
+    border-radius: 10px;
 }
