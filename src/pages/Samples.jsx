@@ -53,10 +53,11 @@ export default function Samples(){
         <div className="samplesContainer">
             <div className={className}>
                 <Link to="/samples/KitchenCabinet" className="samLink" onClick={handleClick}>کابینت آشپزخانه</Link>
-                <Link to="/samples/Closet" className="samLink" onClick={handleClick}>کمد لباسی</Link>
-                <Link to="/samples/ShowCase" className="samLink" onClick={handleClick}>ویترین</Link>
-                <Link to="/samples/TvDesk" className="samLink" onClick={handleClick}>میز تلویزیون</Link>
+                <Link to="/samples/Closet" className="samLink" onClick={handleClick}> کمد لباسی </Link>
+                <Link to="/samples/ShowCase" className="samLink" onClick={handleClick}> ویترین </Link>
+                <Link to="/samples/TvDesk" className="samLink" onClick={handleClick}> میز تلویزیون </Link>
             </div>
+            <br />
             <Routes>
                 <Route index element={<Samples />} />
                 <Route path="/KitchenCabinet" element={MapKitchenCabinet} />
